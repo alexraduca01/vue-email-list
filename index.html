@@ -6,13 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <link rel="stylesheet" href="style.css">
         <title>Vue Email List</title>
     </head>
     
     <body>
         
         <div id="app">
-            
+            <h1>Random emails</h1>
+            <ul>
+                <li v-if='emailList.length === 10' v-for='(elements, index) in emailList'>{{ emailList[index] }}</li>
+            </ul>
         </div>
 
         <script src="script.js"></script>
