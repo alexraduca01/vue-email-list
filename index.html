@@ -14,8 +14,8 @@
         
         <div id="app">
             <h1>Random emails</h1>
-            <ul>
-                <li v-if='emailList.length === 10' v-for='(elements, index) in emailList'>{{ emailList[index] }}</li>
+            <ul v-if='emailList.length === 10'>
+                <li v-for='(elements, index) in emailList'>{{ emailList[index] }}</li>
             </ul>
         </div>
 
